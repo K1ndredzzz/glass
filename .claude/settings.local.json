@@ -11,7 +11,9 @@
       "Bash(dir:*)",
       "Bash(findstr:*)",
       "Bash(powershell:*)",
-      "Bash(set ELECTRON_BUILDER_CACHE=C:Tempelectron-cache)"
+      "Bash(set ELECTRON_BUILDER_CACHE=C:Tempelectron-cache)",
+      "Bash(if exist dist rmdir /s /q dist)",
+      "Bash(ls:*)"
     ]
   }
 }
