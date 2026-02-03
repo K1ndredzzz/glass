@@ -93,6 +93,14 @@ const PROVIDERS = {
           { id: 'whisper-medium', name: 'Whisper Medium (769M)' },
       ],
   },
+  'custom-proxy': {
+      name: '自定义反代 API',
+      handler: () => require("./providers/custom-proxy"),
+      llmModels: [
+          { id: 'gemini-3-pro-preview', name: 'Gemini 3 Pro Preview' },
+      ],
+      sttModels: [],
+  },
 };
 
 function sanitizeModelId(model) {
@@ -158,7 +166,8 @@ function getProviderClass(providerId) {
         'gemini': 'GeminiProvider',
         'deepgram': 'DeepgramProvider',
         'ollama': 'OllamaProvider',
-        'whisper': 'WhisperProvider'
+        'whisper': 'WhisperProvider',
+        'custom-proxy': 'CustomProxyProvider'
     };
     
     const className = classNameMap[actualProviderId];

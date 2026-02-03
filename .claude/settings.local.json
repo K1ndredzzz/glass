@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build)",
+      "Bash(npm install)",
+      "Bash(timeout:*)",
+      "Bash(npm run build:renderer:*)",
+      "Bash(npm install --ignore-scripts)",
+      "Bash(npm run build:win)",
+      "Bash(npm run package)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(powershell:*)",
+      "Bash(set ELECTRON_BUILDER_CACHE=C:Tempelectron-cache)"
+    ]
+  }
+}

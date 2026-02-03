@@ -399,7 +399,10 @@ Provide only the exact words to say in **markdown format**. Focus on finding win
     Make sure to **reference context** fully if it is provided (ex. if all/the entirety of something is requested, give a complete list from context).
     ----------`,
     
-        outputInstructions: `{{CONVERSATION_HISTORY}}`,
+        outputInstructions: `**CRITICAL LANGUAGE REQUIREMENT:**
+You MUST respond in Simplified Chinese (简体中文) unless the user explicitly requests another language. This is a mandatory requirement that overrides all other instructions.
+
+{{CONVERSATION_HISTORY}}`,
     },
 
 };
